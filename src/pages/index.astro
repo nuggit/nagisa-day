@@ -1,0 +1,171 @@
+
+---
+// src/pages/index.astro
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nagisa Day - Full Stack Developer</title>
+    <meta name="description" content="Full stack software developer in Portland, OR" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="circle-card">
+        <div class="content">
+          <div class="profile-image">
+            <img src="/face2.jpg" alt="Nagisa Day" />
+          </div>
+          
+          <h1 class="name">Nagisa Day</h1>
+          
+          <p class="description">Full stack software developer
+		  <br />in Portland, OR</p>
+          
+          
+          <div class="social-links">
+            <a href="https://linkedin.com/in/nagisaday" target="_blank" rel="noopener noreferrer" class="social-link squiggle">
+              LinkedIn
+            </a>
+            <a href="https://github.com/nuggit" target="_blank" rel="noopener noreferrer" class="social-link squiggle">
+              GitHub
+            </a>
+          </div>
+
+          <a href="mailto:hi@nagisa.day" class="contact squiggle">hi@nagisa.day</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .circle-card {
+    min-width: 600px;
+    min-height: 600px;
+    border: 10px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .content {
+    text-align: center;
+    max-width: 400px;
+    padding: 2rem;
+  }
+
+  .profile-image {
+    margin-bottom: 1rem;
+  }
+
+  .profile-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 3px solid black; */
+  }
+
+  .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .contact {
+    /* display: inline-block;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 6px;
+    transition: all 0.2s ease; */
+  }
+
+  .contact:hover {
+    /* background-color: black;
+    color: white; */
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .social-link {
+    /* color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.2s ease; */
+  }
+
+  .social-link:hover {
+    /* background-color: black;
+    color: white; */
+  }
+
+  /* Squiggle effect from: https://www.30secondsofcode.org/css/s/squiggle-link-hover-effect/ */
+  a.squiggle {
+    background-image: linear-gradient(to bottom, #cccccc 0%, #cccccc 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+	a.squiggle:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .2s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-15px);}}%3C/style%3E%3Cpath fill='none' stroke='%23cccccc' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-size: auto 4px;
+  }
+
+  @media (max-width: 600px) {
+    .circle-card {
+      min-width: 100vh;
+      min-height: 100vh;
+      margin: auto; /* Centers the content */
+    }
+  }
+</style>
