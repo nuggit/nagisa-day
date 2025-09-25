@@ -21,20 +21,19 @@
           
           <h1 class="name">Nagisa Day</h1>
           
-          <p class="description">Full stack software developer
-		  <br />in Portland, OR</p>
-          
+          <p class="description">Full stack software developer<br />in Portland, OR</p>
           
           <div class="social-links">
-            <a href="https://linkedin.com/in/nagisaday" target="_blank" rel="noopener noreferrer" class="social-link squiggle">
+            <a href="https://linkedin.com/in/nagisaday" target="_blank" rel="noopener noreferrer" class="squiggle">
               LinkedIn
             </a>
-            <a href="https://github.com/nuggit" target="_blank" rel="noopener noreferrer" class="social-link squiggle">
+            <a href="https://github.com/nuggit" target="_blank" rel="noopener noreferrer" class="squiggle">
               GitHub
             </a>
+            <a href="mailto:hi@nagisa.day" class="squiggle">
+              hi@nagisa.day
+            </a>
           </div>
-
-          <a href="mailto:hi@nagisa.day" class="contact squiggle">hi@nagisa.day</a>
         </div>
       </div>
     </main>
@@ -91,7 +90,6 @@
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    /* border: 3px solid black; */
   }
 
   .name {
@@ -107,43 +105,13 @@
     color: #333;
   }
 
-  .contact {
-    /* display: inline-block;
-    font-size: 1rem;
-    color: black;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 6px;
-    transition: all 0.2s ease; */
-  }
-
-  .contact:hover {
-    /* background-color: black;
-    color: white; */
-  }
-
   .social-links {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-
-  .social-link {
-    /* color: black;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: all 0.2s ease; */
-  }
-
-  .social-link:hover {
-    /* background-color: black;
-    color: white; */
+    margin: 1rem auto;
+    width: 200px;
   }
 
   /* Squiggle effect from: https://www.30secondsofcode.org/css/s/squiggle-link-hover-effect/ */
@@ -162,10 +130,8 @@
   }
 
   @media (max-width: 600px) {
-    .circle-card {
-      min-width: 100vh;
-      min-height: 100vh;
-      margin: auto; /* Centers the content */
+    .container {
+      overflow-x: hidden;
     }
   }
 </style>
